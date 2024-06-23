@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonkeyFinder.View.NewPage1"
+             xmlns:model="clr-namespace:MonkeyFinder.Model"
+             Title="NewPage1">
+
+    <StackLayout Orientation="Vertical" Spacing="10" Padding="20" Margin="10" BackgroundColor="Purple">
+        <Button Text="Click Me" FontSize="Large" TextColor="Black"/>
+        <Label Text="Click Me" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="Orange"/>
+
+        <CollectionView>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Monkey">
+                    <StackLayout>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <ListView>
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                    <x:String>"Susi"</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="model:Monkey">
+                    <StackLayout>
+                    </StackLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <CollectionView Margin="5" BackgroundColor="Silver" Opacity="0.8" VerticalScrollBarVisibility="Always" IsVisible="True" ItemsUpdatingScrollMode="KeepScrollOffset">
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type model:Monkey}">
+                    <model:Monkey Name="Baboon" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg" Location="Africa and Asia" Details="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."/>
+                    <model:Monkey Name="Capuchin Monkey" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg"  Location="Central and South America" Details="The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus."/>
+                    <model:Monkey Name="Red-Shanked douc" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg" Location="Central and East Africa" Details="The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia"/>
+
+                    <model:Monkey Name="Baboon" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg" Location="Africa and Asia" Details="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."/>
+                    <model:Monkey Name="Capuchin Monkey" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg"  Location="Central and South America" Details="The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus."/>
+                    <model:Monkey Name="Red-Shanked douc" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg" Location="Central and East Africa" Details="The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia"/>
+
+                    <model:Monkey Name="Baboon" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg" Location="Africa and Asia" Details="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."/>
+                    <model:Monkey Name="Capuchin Monkey" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg"  Location="Central and South America" Details="The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus."/>
+                    <model:Monkey Name="Red-Shanked douc" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg" Location="Central and East Africa" Details="The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia"/>
+
+                    <model:Monkey Name="Baboon" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg" Location="Africa and Asia" Details="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."/>
+                    <model:Monkey Name="Capuchin Monkey" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg"  Location="Central and South America" Details="The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus."/>
+                    <model:Monkey Name="Red-Shanked douc" Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg" Location="Central and East Africa" Details="The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia"/>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Monkey">
+                    <HorizontalStackLayout>
+                        <Image Source="{Binding Image}" HeightRequest="100" WidthRequest="100" Aspect="AspectFill">
+                        </Image>
+                        <Label>
+                            <Label.Text>
+                                <MultiBinding StringFormat="{} {0} {1}">
+                                    <Binding Path="Name"/>
+                                    <Binding Path="Location"/>
+                                </MultiBinding>
+                            </Label.Text>
+                        </Label>
+                        <Button>
+                            <Button.Text>
+                                <MultiBinding StringFormat="{} {0} {1}">
+                                    <Binding Path="Name"/>
+                                    <Binding Path="Location"/>
+                                </MultiBinding>
+                            </Button.Text>
+                        </Button>
+                        <Label LineBreakMode="WordWrap">
+                            <Label.Text>
+                                <MultiBinding StringFormat="{} {0} {1} {2}">
+                                    <Binding Path="Name"/>
+                                    <Binding Path="Image"/>
+                                </MultiBinding>
+                            </Label.Text>
+                        </Label>
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+    
+</ContentPage>

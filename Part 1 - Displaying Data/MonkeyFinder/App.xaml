@@ -47,7 +47,6 @@
             <Style TargetType="RefreshView" ApplyToDerivedTypes="True">
                 <Setter Property="RefreshColor" Value="{StaticResource Primary}" />
             </Style>
-            
             <Style x:Key="ButtonOutline" TargetType="Button">
                 <Setter Property="Background" Value="{StaticResource LightBackground}"/>
                 <Setter Property="TextColor" Value="{StaticResource Primary}"/>
